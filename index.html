@@ -8,6 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -37,9 +38,15 @@
             margin-top: 20px;
             font-size: 1.5em;
         }
+        #header {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
+
+<div id="header">Made by Leevesh</div>
 
 <div>
     <div id="game">
@@ -131,9 +138,3 @@
             cell.textContent = '';
         });
     }
-
-    statusDisplay.textContent = `Player ${currentPlayer}'s turn`;
-</script>
-
-</body>
-</html>
